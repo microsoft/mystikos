@@ -1,4 +1,4 @@
-DIRS = docker_aks helloworld java_hello_world rust tensorflow_lite TEE_aware/dotnet TEE_aware/gencreds
+DIRS = docker_aks helloworld java_hello_world rust TEE_aware/dotnet TEE_aware/gencreds
 
 ifdef MHSM_AAD_URL
 DIRS += confidential_ml
