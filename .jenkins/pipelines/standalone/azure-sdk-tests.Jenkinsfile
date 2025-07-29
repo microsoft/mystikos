@@ -148,7 +148,6 @@ pipeline {
                                      string(credentialsId: 'mystikos-storage-account-connectionstring', variable: 'STANDARD_STORAGE_CONNECTION_STRING')]) {
                         sh """
                            ${JENKINS_SCRIPTS}/global/run-azure-tests.sh \
-                             ${WORKSPACE}/tests/azure-sdk-for-cpp  \
                              ${WORKSPACE}/solutions/dotnet_azure_sdk
                            """
                     }
